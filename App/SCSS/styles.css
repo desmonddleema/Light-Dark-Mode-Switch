@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.section iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section h2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 40vw;
+  background-color: black;
+  -webkit-transition: background-color 5ms ease-in-out;
+  transition: background-color 5ms ease-in-out;
+  color: white;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  mix-blend-mode: multiply;
+}
+
+.section.active h2 {
+  background-color: white;
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.section .dot {
+  position: absolute;
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  cursor: default;
+}
+
+.section .dot::before {
+  content: "Light Mode";
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  white-space: nowrap;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.section .dot.active {
+  background-color: black;
+}
+
+.section .dot.active::before {
+  content: "Dark Mode";
+  color: black;
+}
+
+.section .dot:active {
+  -webkit-box-shadow: 0 0 0 200vh white;
+          box-shadow: 0 0 0 200vh white;
+}
+/*# sourceMappingURL=styles.css.map */
