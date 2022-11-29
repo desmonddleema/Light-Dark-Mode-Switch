@@ -1,3 +1,7 @@
+# [Light-Dark-Mode-Switch (Click to view the magic)](https://desmonddleema.github.io/Light-Dark-Mode-Switch/) <br>
+```View magic on mouse click``` <br>
+```HTML``` ```SCSS``` ```Javascript``` 
+
 # Light-Dark-Mode-Switch
 
 - Section with position absolute, height = width = 100%
